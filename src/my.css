@@ -1,0 +1,173 @@
+#background-image {
+    z-index: -1;
+    position: fixed;
+    background-image: url("./skocko-dodatno/wallpaper.jpg");
+    background-color: #0775ff;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.header {
+    position: relative;
+}
+
+.modal h5.modal-title {
+    text-align: center;
+}
+h1, h2 {
+    font-family: Impact, fantasy;
+}
+h1 {
+    margin-top: 10px;
+    text-align: center;
+    cursor: default;
+}
+h1 > .skocko {
+    font-size: 1.2em;
+}
+
+.player-panel h1 {
+    text-align: center;
+}
+div {
+    box-sizing: border-box;
+}
+.panel {
+    padding-top: 10px;
+    background-color: rgba(255, 224, 0, 0.55);
+}
+.panel-pogodci {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.player-panel .panel-simboli{
+    border: 10px solid rgba(255, 224, 0, 0);
+    transition: 300ms all;
+}
+.player-panel.active .panel-simboli {
+    border: 10px solid rgba(255, 224, 0, 1);
+}
+.polje {
+    cursor: default;
+    height: 40px;
+    width: 40px;
+    background-color: #005fd4;
+    color: white;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+}
+.skocko, .zvezda {
+    color: yellow!important;
+}
+.srce, .karo {
+    color: red!important;
+}
+.pik, .tref {
+    color: black!important;
+}
+.pogadjanje {
+    margin: 10px 0;
+    justify-content: space-around;
+}
+.pogadjanje-pogodci .polje {
+    border-radius: 100%;
+}
+.pogadjanje:nth-child(8) {
+    margin-top: 40px;
+}
+
+#dugmad {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px 0;
+}
+.dugmad-background {
+    background-color: rgba(255, 224, 0, 0.6);
+}
+#dugmad button, #modal-settings {
+    color: black;
+    background-color: #005fd4;
+    transition: 500ms all;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#modal-settings {
+    color: white;
+    padding: 10px;
+    border-width: 0px;
+}
+button.settings {
+    color: white!important;
+    font-family: monospace;
+}
+#dugmad button {
+    margin: 0 10px;
+    width: 60px;
+    height: 60px;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#dugmad button:disabled, #dugmad button:disabled:hover {
+    background-color: #3e699e;
+}
+
+#dugmad button:hover, #dugmad button:active {
+    background-color: #2486ff;
+}
+#dugmad button:active {
+    transition: 300ms all;
+    background-color: #4a9bff;
+}
+button, button:hover, button:active, #modal-settings, .moje-dugme {
+    outline: 0px solid;
+}
+#dugmad button.start {
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+}
+#dugmad button:focus {
+    outline: none;
+}
+#music-button {
+    font-size: 2.5em;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgba(0,0,0,0.5);
+    position: absolute;
+    right: 75px;
+    top: 0;
+}
+#music-button.active {
+    color: rgba(0,0,0,1);
+}
+#music-button:hover {
+    text-shadow: 0 0 10px white;
+}
+.polje.right-place {
+    background-color: red;
+}
+.polje.right-symbol {
+    background-color: yellow;
+}
+.my-container {
+    background-color: rgba(255,255,255,0.85);
+    min-height: 100vh;
+    padding: 10px 60px;
+}
+.unos .polje, #konrole > button{
+    margin: 0 10px;
+}
+.my-btn-block {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.my-container p {
+    font-size: 1.2rem;
+}

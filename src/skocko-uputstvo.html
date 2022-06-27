@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skočko - Uputstvo</title>
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <link rel="stylesheet" href="./my.css">
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="background-image"></div>
+    <div class="container my-container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Skočko - Uputstvo</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2>Pravila igre</h2>
+            </div>
+            <div class="col-12">
+                <!-- tekst je izvučen iz postavke laboratorijske vežbe -->
+                <p>
+                    Igru igraju dva igrača. Svaki igrač treba da pogodi kombinaciju od četiri znaka zadatu od strane
+                    drugog igrača. Igrači imaju po sedam pokušaja da pogode traženu kombinaciju. Za svaki pokušaj,
+                    igrač dobija informaciju o tome koliko znakova je tačno pogođeno i na odgovarajućoj poziciji, a
+                    koliko znakova je tačno pogođeno, ali nije na odgovarajućoj poziciji. Igrači na raspolaganju imaju po
+                    60 sekundi za pogađanje kombinacije.
+                </p>
+                <p>
+                    Na stranici sa podešavanjima igrači protivniku
+                    zadaju kombinaciju od 4 znaka pri čemu na raspolaganju imaju 6 znakova. Znakovi u kombinaciji smeju
+                    da se ponavljaju. Pri učitavanju stranice sa podešavanjima, prvi igrač zadaje svoju kombinaciju, a
+                    nakon što je potvrdi, drugi igrač zadaje svoju kombinaciju. Nakon što su obe kombinacije zadate,
+                    prelazi se na stranicu sa igrom.
+
+                </p>
+                <p>
+                    Igra teče tako što igrači naizmenično pokušavaju da pogode zadatu kombinaciju birajući 4 znaka. Za
+                    svaki pokušaj igrač dobija informaciju o uspešnosti pokušaja. Nakon pokušaja, zaustavlja se vreme
+                    igrača, nastavlja se vreme protivnika i tada on igra svoj potez. Igrač koji prvi pogodi zadatu
+                    kombinaciju je pobednik i igra se tada završava. Ukoliko nijedan igrač ne pogodi kombinaciju nakon
+                    svog sedmog pokušaja, ishod igre je nerešen. Ukoliko jednom od igrača istekne vreme, tada se igra
+                    završava i pobednik je igrač kom je preostalo vreme.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2>Prihvatanje uslova</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 text-center"><h3>Igrač 1</h3></div>
+            <div class="col-6 text-center"><h3>Igrač 2</h3></div>
+        </div>
+        <div class="row">
+            <div class="col-6 text-center">
+                <input type="checkbox" id="potvrda-1" />
+                <label for="potvrda-1"> Slažem se sa uslovima igre.</label>
+            </div>
+            <div class="col-6 text-center">
+                <input type="checkbox" id="potvrda-2" />
+                <label for="potvrda-2"> Slažem se sa uslovima igre.</label>
+            </div>
+            <div class="col-12">
+                <div id="greska" class="alert alert-danger d-none">Oba igrača moraju da prihvate uslove igre.</div>
+            </div>
+            <div class="col-12 pt-2">
+                <button id="potvrda-dugme" class="my-btn-block btn btn-primary">Potvrdi</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="./uputstvo-script.js"></script>
+</body>
+</html>
